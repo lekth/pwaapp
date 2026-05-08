@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f1118" />
+    <title>PWA Bet App</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero card">
+        <p class="badge">Welcome Bonus</p>
+        <h1>Получи до <span>500&euro;</span> на первый депозит</h1>
+        <p class="subtitle">
+          Делай ставки в live-режиме и открывай повышенные коэффициенты в мобильном приложении.
+        </p>
+      </section>
+
+      <section class="signup card">
+        <h2>Регистрация</h2>
+        <form id="signup-form" action="success.html" method="get">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="password">Пароль</label>
+          <input id="password" name="password" type="password" minlength="6" placeholder="Минимум 6 символов" required />
+
+          <label for="currency">Валюта</label>
+          <select id="currency" name="currency" required>
+            <option value="">Выбери валюту</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="UAH">UAH</option>
+          </select>
+
+          <button type="submit">Создать аккаунт</button>
+        </form>
+      </section>
+
+      <section class="card bookmaker-grid">
+        <article class="bookmaker-block">
+          <h3>Live-матчи</h3>
+          <ul class="odds-list">
+            <li><span>Real Madrid - Barcelona</span><strong>1.92</strong></li>
+            <li><span>Arsenal - Liverpool</span><strong>2.15</strong></li>
+            <li><span>Milan - Inter</span><strong>2.48</strong></li>
+          </ul>
+        </article>
+
+        <article class="bookmaker-block">
+          <h3>Топ-события дня</h3>
+          <ul class="event-list">
+            <li><span>ATP Rome</span><small>Коэф. до 3.80</small></li>
+            <li><span>EuroLeague Final</span><small>Boost +12%</small></li>
+            <li><span>UFC Main Event</span><small>Live cashback</small></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
